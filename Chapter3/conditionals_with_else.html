@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Conditionals with Else</title>
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+			var playerScore= 2500;
+			var highSCore = 10000;
+			
+			if(playerScore > highSCore)
+			{
+				//Player has high score
+				highScore = playerScore;
+				document.write("You attained the high score!");
+			} else
+			{
+				document.write("You did not attain the high score.");
+			}
+			
+			var numericalGrade = 82;
+			var letterGrade;
+			
+			if(numericalGrade >= 90)
+			{
+				letterGrade = "A";
+			} else if(numericalGrade >= 80)
+			{
+				letterGrade = "B";
+			} else if(numericalGrade >= 70)
+			{
+				letterGrade = "C";
+			} else if(numericalGrade >= 60)
+			{
+				letterGrade = "D";
+			} else
+			{
+				letterGrade = "F";
+			}
+			
+			document.write("<br/>Your Grade is " + letterGrade);
+		</script>
+	</body>
+</html>

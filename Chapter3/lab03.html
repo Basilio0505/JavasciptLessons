@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Lab 03</title>
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+			var age = 35;
+			
+			if(age < 18)
+			{
+				document.write("You're just a pup!<br/>");
+			} else if(age >= 18 && age <= 29)
+			{
+				document.write("Welcome to young adulthood... Have fun now (while you can!)<br/>");
+			} else if(age >= 30 && age <= 39)
+			{
+				document.write("It's time to get serious about career and family<br/>");
+			} else if(age >= 40 && age <= 49)
+			{
+				document.write("Time to start thinking about retirement. Make sure you're saving.<br/>");
+			} else if(age >= 50 && age <= 59)
+			{
+				document.write("Enjoy your life now! You've done well.<br/>");
+			} else if(age >= 60)
+			{
+				document.write("60 is the new 40. DO something exciting!<br/>");
+			}
+			
+			var discountCode = "C"
+			var discountRate;
+			var amountOfSale = 27.95;
+			
+			switch (discountCode)
+			{
+				case "A":
+				case "a":
+					discountRate = .0325;
+					break;
+				case "B":
+				case "b":
+					discountRate = .05;
+					break;
+				case "C":
+				case "c":
+					discountRate = .075;
+					break;
+				case "D":
+				case "d":
+					discountRate = .1;
+					break;
+				default:
+					document.write("Code not recognized");
+			}
+			
+			document.write("Amount of Sale: $"+ (amountOfSale-(amountOfSale*discountRate)));
+		</script>
+	</body>
+</html>
