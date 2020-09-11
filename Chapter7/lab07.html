@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Lab 07</title>
+		<script lang="javascript" type="text/javascript">
+			function outputArray(theArray)
+			{
+				for(i in theArray)
+				{
+					document.write(theArray[i] + "<br/>");
+				}
+			}
+		</script>
+		
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+			var placesToVisit = ["Seoul", "Tokyo", "Seattle", "New York", "Singapore"];
+			
+			//for(i in placesToVisit)
+			//{
+			//	document.write(placesToVisit[i] + "<br/>");
+			//}
+			
+			placesToVisit.push("Boise");
+			outputArray(placesToVisit);
+			
+			document.write("###########<br/>")
+			placesToVisit.shift();
+			placesToVisit.shift();
+			outputArray(placesToVisit);
+			
+			document.write("###########<br/>")
+			placesToVisit.sort();
+			outputArray(placesToVisit);
+		</script>
+	</body>
+</html>
