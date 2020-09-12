@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>The String Object</title>
+		
+	</head>
+	<body>
+		<script lang="javascript" type="text/javascript">
+			var phrase = "If you are strong enough there are no precedents.";
+			
+			document.write("Length: " + phrase.length + "<br/>");
+			
+			//charAt() <--- Characer at a specificed position in the string.
+			for(var i =0; i < phrase.length; i++)
+			{
+				document.write(i + ": " + phrase.charAt(i));
+				document.write(" | " + phrase.charCodeAt(i) + "<br/>");
+			}
+			
+			document.write("Index of s: " + phrase.indexOf('s') + "<br/>");
+			
+			document.write(phrase.replace("strong", "attractive")+ "<br/>");
+			document.write(phrase + "<br/>"); 
+			//No replacement because replace() only returns manipulated
+			//string not alter the phrase variable.
+			
+			var names = "Mark,Bob,Tom,Brett,Mary,Lester,Charles";
+			var moreNames = names.split(',');
+			
+			for(var x = 0; x < moreNames.length; x++)
+			{
+				document.write(moreNames[x] + "<br/>");
+			}
+		</script>
+	</body>
+</html>
